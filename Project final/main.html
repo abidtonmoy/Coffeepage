@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonmoy</title>
+
+    <!-- Bootstraps -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- font awosome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+
+<body>
+      <div class="container">
+           <header>
+              
+            <nav class="navbar navbar-expand-md ">
+                <div class="container-fluid">
+                  
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fas fa-bars navbar-icon "></i></span>
+                  </button>
+                   
+                  <a class="navbar-brand" href="#">
+                     
+                    <img id="main-img"  class="img rounded-circle img-fluid  " src="data:image/png;base64,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" alt="logo">
+
+                  </a>
+
+               
+                  <div class=" collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class=" navbar-nav ">
+                      <li class="nav-item active">
+                        <a class="nav-link text-white text-center text-md-left  " aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white text-center text-md-left" aria-current="page" href="About-us">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white text-center text-md-left" aria-current="page" href="#">Our shop location</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white text-center text-md-left" aria-current="page" href="#">Contact us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white text-center text-md-left" aria-current="page" href="#">Feedback</a>
+                      </li>
+                      
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav>
+
+              <section id="banner">
+                    <div class="banner-container d-flex justify-content-center align-items-center">
+                          <div class="banner-contents text-center">
+                               <h1 class="font-weight-bolder text-white mb-5">We create delicious memories. !!!</h1>
+                               <button class="btn btn-lg btn-dark m-sm-2"> <i class="fa-solid fa-cart-shopping m-1" onclick="location.href='#buynow'" ></i>  Buy now</button>
+                               
+                              </div>
+
+                    </div>
+
+              </section>
+
+
+           </header>
+
+           <main>
+                 
+                 <!-- fetures starts -->
+                <section id="features">
+                <div class="row">
+                        <div class="col-lg-4 col-md-6 d-block d-flex">
+                          
+                          <div class="features-col card">
+ 
+                           <img class="card-img-top" src="image/ruben-ramirez-xhKG01FN2uk-unsplash.jpg" alt="coffeeshop">
+                             
+                           <h4 class="font-weight-bolder">Visit our caffee</h4>
+                           <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, ex!</p>
+ 
+                          </div>
+ 
+                     </div>
+                     <div class="col-lg-4 d-block d-lg-flex">
+                           
+                       <div class="features-col card ">
+                          
+                         <img id="card-img-top" src="image/brewing-pourover-coffee-in-the-kitchen-pouring-hot-water-on-the-2G2G8FB.jpg" alt="cardbrew">
+ 
+                        <h4 class="font-weight-bolder">Learn To Brew</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, ex!</p>
+ 
+                       </div>
+ 
+                  </div>
+                <div class="col-lg-4">
+                   
+                   <div class="features-col card">
+                      
+                     <img class="card-img-top" src="image/christina-rumpf-LMzwJDu6hTE-unsplash.jpg" alt="">  
+                    <h4 class="font-weight-bolder">Buy Bean</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, qui.</p>
+ 
+                   </div> 
+ 
+                 </div>
+              </div>
+           
+            </section> 
+            
+
+           
+                
+               
+                <!-- carousal start -->
+                 
+
+                <!-- carousal end -->
+              
+              
+              
+              
+              
+              </div>
+
+                 
+               <!-- fetures end -->
+
+               <!-- about me start -->
+                    
+                 
+
+
+               <!-- about me end -->
+
+           </main>
+
+           <footer>
+
+           </footer>
+      </div>
+
+
+
+    
+
+
+
+<!-- bootstraps js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>

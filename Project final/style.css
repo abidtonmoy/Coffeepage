@@ -1,0 +1,179 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+    
+
+
+}
+.section-title h3{
+
+    font-weight: bolder;
+    margin-bottom: 0;
+
+}
+
+.hr-style{
+	background-color: rgb(255, 255, 255);
+	border-top: 2px dotted black ;
+    width: 10% ;
+    margin: auto;
+
+}
+/* header start */
+header{
+     background-image: url("image/pexels-nastyasensei-2267869.jpg");
+     background-position: center;
+     background-attachment: fixed ;
+     background-repeat: no-repeat;
+     background-size: cover;
+     
+     
+     
+
+}
+
+.navbar{
+    padding: 1% 10%;
+    background-color: rgba(0,0,0,0.3);
+    opacity: 1.0;
+    
+}
+.navbar-brand img{
+
+    width: 60px;
+    height: auto;
+}
+
+.navbar-icon{
+    color: white;
+    
+
+}
+.nav-link{
+    color: white;
+    margin: 10px;
+    border-radius: 15px;
+    transition: .4s;
+    
+}
+.nav-link:hover{
+   background: gray ;
+   outline-offset:white;
+   transform: scale(1.1);
+   opacity: 1.0;
+}
+.banner-container{
+    height: 100vh;
+    
+   
+}
+
+.banner-container h1{
+    font-size: 5.0rem;
+    background-color: rgb(29, 28, 28);
+    opacity: 0.4;
+    padding: 10px 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 5px;
+    
+}
+/* header end */
+
+/* features :start */
+#features{
+    padding: 5% 10%;
+    background: #E9DAC1 ;
+}
+.features-col{
+    border: 1px solid black ;
+    border-radius: 5px;
+    padding: 25px;
+    margin: 20px 0;
+    transition: .4s;
+    background-color: #E9DAC1;
+}
+.features-col:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 5px;
+    cursor: pointer;
+}
+
+.card-img-top{
+   
+    width: 100%;
+    height: 170px;
+
+}
+
+
+/* features end */
+/* carousel start */
+#feedback{
+     padding: 5%;
+     background:white;
+}
+.feedback-img{
+    width: 1100px;
+    height: 42px;
+    margin-bottom: 5px;
+
+}
+.carousel-item{
+      text-align: center;
+      margin-top: 20px;
+      
+}
+.card-img{
+
+    height: 400px;
+    width: auto;
+    margin: center;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background:var(--black);
+    flex-wrap: wrap;
+}
+
+
+
+.about .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:#fff;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color:#ccc;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+/* carousal end */
